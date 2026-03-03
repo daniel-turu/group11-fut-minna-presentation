@@ -53,38 +53,22 @@ export default function Slide7() {
                     </h2>
                 </motion.div>
 
-                {/* Custom Beamforming Illustration */}
+                {/* Tech Hero Image */}
                 <motion.div
-                    className="relative w-full h-64 mt-4 glass-panel rounded-2xl border-dark-700 overflow-hidden flex items-center justify-center bg-dark-800/30"
-                    initial={{ opacity: 0, scale: 0.9 }}
+                    className="relative w-full h-[320px] mt-6 glass-panel rounded-3xl border border-dark-700 overflow-hidden flex items-center justify-center bg-dark-900 group shadow-[0_0_30px_rgba(37,99,235,0.1)]"
+                    initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
                 >
-                    <svg viewBox="0 0 300 200" className="w-full h-full opacity-80 pl-4">
-                        <defs>
-                            <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stopColor="#2563eb" stopOpacity="0.8" />
-                                <stop offset="100%" stopColor="#0891b2" stopOpacity="0" />
-                            </linearGradient>
-                        </defs>
-                        {/* Antenna Tower */}
-                        <rect x="30" y="80" width="10" height="120" fill="#cbd5e1" />
-                        <path d="M20,80 L50,80 L40,40 Z" fill="#94a3b8" />
-                        <circle cx="35" cy="40" r="4" fill="#ef4444" className="animate-pulse" />
+                    {/* Glowing Vignette */}
+                    <div className="absolute inset-0 bg-gradient-to-tr from-dark-900/80 via-transparent to-transparent z-10 pointer-events-none"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-dark-900/50 to-transparent z-10 pointer-events-none"></div>
 
-                        {/* Omnidirectional Waves (Faded out) */}
-                        <path d="M45,40 Q90,0 120,40" fill="none" stroke="#94a3b8" strokeWidth="1" strokeDasharray="4 4" className="opacity-30" />
-                        <path d="M45,40 Q80,100 120,80" fill="none" stroke="#94a3b8" strokeWidth="1" strokeDasharray="4 4" className="opacity-30" />
-
-                        {/* Targeted Beamforming Waves */}
-                        <path d="M40,40 L260,110 L260,150 Z" fill="url(#beamGrad)" className="animate-pulse opacity-60" />
-
-                        {/* User Devices */}
-                        <circle cx="250" cy="130" r="6" fill="#0891b2" />
-                        <circle cx="210" cy="50" r="4" fill="#94a3b8" />
-                        <circle cx="200" cy="180" r="4" fill="#94a3b8" />
-                    </svg>
-                    <div className="absolute top-4 left-4 text-[10px] font-bold text-theme-blue bg-theme-blue/10 px-2 py-1 rounded">BEAMFORMING SIMULATION</div>
+                    <img
+                        src="/5g-tech.png"
+                        alt="5G Key Technologies Concept"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s] ease-out object-center"
+                    />
                 </motion.div>
             </div>
 
