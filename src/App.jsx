@@ -17,33 +17,37 @@ import Slide14 from "./components/slides/Slide14";
 import Slide15 from "./components/slides/Slide15";
 import Slide16 from "./components/slides/Slide16";
 import Slide17 from "./components/slides/Slide17";
+import TableOfContents from "./components/slides/TableOfContents";
 
 // Add subsequent slides to this array as they are built
-const slides = [
-  Slide1,
-  Slide2,
-  Slide3,
-  Slide4,
-  Slide5,
-  Slide6,
-  Slide7,
-  Slide8,
-  Slide9,
-  Slide10,
-  Slide11,
-  Slide12,
-  Slide13,
-  Slide14,
-  Slide15,
-  Slide16,
-  Slide17,
+const slideConfig = [
+  { component: Slide1, number: 1 },
+  { component: Slide2, number: 2 },
+  { component: TableOfContents, number: null }, // Unnumbered between 2 and 3
+  { component: Slide3, number: 3 },
+  { component: Slide4, number: 4 },
+  { component: Slide5, number: 5 },
+  { component: Slide6, number: 6 },
+  { component: Slide7, number: 7 },
+  { component: Slide8, number: 8 },
+  { component: Slide9, number: 9 },
+  { component: Slide10, number: 10 },
+  { component: Slide11, number: 11 },
+  { component: Slide12, number: 12 },
+  { component: Slide13, number: 13 },
+  { component: Slide14, number: 14 },
+  { component: Slide15, number: 15 },
+  { component: Slide16, number: 16 },
+  { component: Slide17, number: 17 },
 ];
+
+const totalNumberedSlides = slideConfig.filter(s => s.number !== null).length;
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    if (currentSlide < slides.length - 1) {
+    if (currentSlide < slideConfig.length - 1) {
       setCurrentSlide((prev) => prev + 1);
     }
   };
@@ -87,7 +91,8 @@ function App() {
     };
   }, [currentSlide]);
 
-  const CurrentSlideComponent = slides[currentSlide];
+  const currentSlideData = slideConfig[currentSlide];
+  const CurrentSlideComponent = currentSlideData.component;
 
   return (
     <div className="w-screen h-screen bg-dark-900 text-white overflow-hidden tech-grid relative flex flex-col items-center justify-center">
@@ -114,10 +119,12 @@ function App() {
 
           {/* Navigation Wrapper */}
           <SlideMaster
-            current={currentSlide + 1}
-            total={slides.length}
+            current={currentSlideData.number}
+            total={totalNumberedSlides}
             onNext={nextSlide}
             onPrev={prevSlide}
+            isFirst={currentSlide === 0}
+            isLast={currentSlide === slideConfig.length - 1}
           />
         </main>
       </div>
