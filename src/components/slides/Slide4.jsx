@@ -65,9 +65,9 @@ export default function Slide4() {
                 transition={{ duration: 0.6 }}
                 className="text-center mb-16 z-10 w-full"
             >
-                <span className="text-theme-cyan uppercase tracking-[0.3em] text-xs font-bold mb-2 block">Evolution Timeline</span>
-                <h2 className="text-5xl font-bold text-white">
-                    From <span className="text-3xl text-dark-400">1G</span> to <span className="text-gradient font-black">5G</span>
+                <span className="text-theme-cyan uppercase tracking-[0.3em] text-sm font-bold mb-3 block">Evolution Timeline</span>
+                <h2 className="text-6xl font-bold text-white">
+                    From <span className="text-4xl text-dark-400">1G</span> to <span className="text-gradient font-black">5G</span>
                 </h2>
             </motion.div>
 
@@ -99,20 +99,20 @@ export default function Slide4() {
                         />
 
                         {/* Info Card */}
-                        <div className={`glass-panel p-5 rounded-2xl border w-full text-center transition-all duration-300 relative z-10 bg-dark-800/80 mb-2
+                        <div className={`glass-panel p-5 rounded-2xl border w-56 text-center transition-all duration-300 relative z-10 bg-dark-800/80 mb-2
               ${item.active ? 'border-theme-cyan/50 shadow-[0_10px_30px_rgba(34,211,238,0.15)] -translate-y-4' : 'border-dark-700 group-hover:border-theme-cyan/30 group-hover:-translate-y-2'}`}
                         >
-                            <div className="text-xs font-mono font-bold text-dark-400 mb-2">{item.year}</div>
-                            <div className={`text-3xl font-black mb-3 flex items-center justify-center gap-2 ${item.active ? 'text-theme-cyan drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]' : 'text-white'}`}>
+                            <div className="text-sm font-mono font-bold text-dark-400 mb-2">{item.year}</div>
+                            <div className={`text-5xl font-black mb-3 flex items-center justify-center gap-2 ${item.active ? 'text-theme-cyan drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]' : 'text-white'}`}>
                                 {item.gen}
                             </div>
-                            <p className="text-xs text-dark-300 font-medium leading-relaxed mb-4 min-h-[40px] px-1">
+                            <p className="text-sm text-dark-300 font-medium leading-relaxed mb-4 min-h-[44px] px-1">
                                 {item.features}
                             </p>
 
                             <div className="mt-auto flex items-center justify-center gap-2 pt-3 border-t border-dark-700">
-                                <item.icon className={`w-4 h-4 ${item.iconColor}`} />
-                                <span className={`text-sm font-bold tracking-wide ${item.active ? 'text-theme-cyan' : 'text-dark-300'}`}>
+                                <item.icon className={`w-5 h-5 ${item.iconColor}`} />
+                                <span className={`text-base font-bold tracking-wide ${item.active ? 'text-theme-cyan' : 'text-dark-300'}`}>
                                     {item.speed}
                                 </span>
                             </div>

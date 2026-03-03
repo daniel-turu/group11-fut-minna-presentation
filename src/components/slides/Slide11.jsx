@@ -39,22 +39,22 @@ export default function Slide11() {
     <div className="w-full h-full flex items-center justify-between px-16 relative">
       {/* Left Column: Text & Features */}
       <div className="flex-[1] pr-12 z-10 flex flex-col justify-center h-full">
-        <div className="mb-8 z-10">
+        <div className="mb-4 z-10">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="text-theme-purple uppercase tracking-[0.3em] text-xs font-bold mb-2 block">
+            <span className="text-theme-purple uppercase tracking-[0.3em] text-base font-bold mb-3 block">
               Foundational Shifts
             </span>
-            <h2 className="text-5xl font-black text-white tracking-tight leading-tight">
+            <h2 className="text-6xl font-black text-white tracking-tight leading-tight">
               6G <span className="text-gradient">Technologies</span>
             </h2>
           </motion.div>
         </div>
 
-        <div className="flex flex-col gap-3 z-10 w-full max-w-xl">
+        <div className="flex flex-col gap-2 z-10 w-full max-w-xl">
           {technologies.map((tech, index) => (
             <motion.div
               key={index}
@@ -65,19 +65,19 @@ export default function Slide11() {
                 delay: 0.1 * index,
                 ease: "easeOut",
               }}
-              className="glass-panel p-3.5 rounded-2xl border border-dark-700 hover:border-theme-purple/30 transition-all duration-300 group hover:translate-x-2 hover:shadow-[0_8px_30px_rgba(126,34,206,0.08)] bg-dark-800/60 overflow-hidden relative"
+              className="glass-panel p-3 rounded-2xl border border-dark-700 hover:border-theme-purple/30 transition-all duration-300 group hover:translate-x-2 hover:shadow-[0_8px_30px_rgba(126,34,206,0.08)] bg-dark-800/60 overflow-hidden relative"
             >
-              <div className="flex items-center gap-4 relative z-10">
+              <div className="flex items-center gap-2 relative z-10">
                 <div
-                  className={`p-2.5 rounded-xl bg-dark-900 border border-dark-700 group-hover:border-theme-purple/20 transition-colors shadow-sm shrink-0`}
+                  className={`p-3 rounded-xl bg-dark-900 border border-dark-700 group-hover:border-theme-purple/20 transition-colors shadow-sm shrink-0`}
                 >
-                  <tech.icon className={`w-5 h-5 ${tech.color}`} />
+                  <tech.icon className={`w-6 h-6 ${tech.color}`} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[15px] font-bold text-white mb-0.5 leading-tight">
+                  <h3 className="text-[17px] font-bold text-white mb-2 leading-tight">
                     {tech.title}
                   </h3>
-                  <p className="text-dark-300 text-xs font-medium leading-relaxed">
+                  <p className="text-dark-300 text-sm font-medium leading-relaxed">
                     {tech.desc}
                   </p>
                 </div>

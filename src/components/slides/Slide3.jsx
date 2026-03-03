@@ -40,15 +40,15 @@ export default function Slide3() {
                 >
                     <div className="flex items-center gap-3 mb-4">
                         <div className="p-2 rounded-lg bg-theme-cyan/10 text-theme-cyan border border-theme-cyan/20">
-                            <Wifi className="w-6 h-6" />
+                            <Wifi className="w-8 h-8" />
                         </div>
-                        <span className="text-theme-cyan uppercase tracking-[0.2em] text-sm font-bold">Core Concepts</span>
+                        <span className="text-theme-cyan uppercase tracking-[0.2em] text-base font-bold">Core Concepts</span>
                     </div>
-                    <h2 className="text-5xl font-bold leading-tight mb-4 text-white">
+                    <h2 className="text-6xl font-bold leading-tight mb-6 text-white">
                         Introduction to <br />
                         <span className="text-gradient">Wireless Networking</span>
                     </h2>
-                    <p className="text-dark-200 text-lg max-w-xl leading-relaxed font-medium">
+                    <p className="text-dark-200 text-xl max-w-xl leading-relaxed font-medium">
                         Wireless networking allows devices to transmit data through the air using radio waves,
                         forming the basis for modern connectivity, from smartphones to satellites.
                     </p>
@@ -97,14 +97,14 @@ export default function Slide3() {
                         initial={{ opacity: 0, x: 30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: point.delay, ease: "easeOut" }}
-                        className="glass-panel p-5 rounded-xl border border-dark-700 hover:border-theme-cyan/40 transition-all duration-300 flex items-start gap-4 group"
+                        className="glass-panel p-6 rounded-2xl border border-dark-700 hover:border-theme-cyan/40 transition-all duration-300 flex items-start gap-4 group"
                     >
-                        <div className="p-3 rounded-lg bg-dark-800 border border-dark-700 group-hover:border-theme-cyan/40 transition-colors shadow-sm">
-                            <point.icon className="w-6 h-6 text-dark-400 group-hover:text-theme-cyan transition-colors" />
+                        <div className="p-4 rounded-xl bg-dark-800 border border-dark-700 group-hover:border-theme-cyan/40 transition-colors shadow-sm">
+                            <point.icon className="w-8 h-8 text-dark-400 group-hover:text-theme-cyan transition-colors" />
                         </div>
                         <div>
-                            <h3 className="text-lg font-bold text-white mb-1">{point.title}</h3>
-                            <p className="text-dark-300 text-sm leading-relaxed font-medium">{point.desc}</p>
+                            <h3 className="text-xl font-bold text-white mb-2">{point.title}</h3>
+                            <p className="text-dark-300 text-base leading-relaxed font-medium">{point.desc}</p>
                         </div>
                     </motion.div>
                 ))}

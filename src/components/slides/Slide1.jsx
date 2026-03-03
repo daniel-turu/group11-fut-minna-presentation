@@ -14,11 +14,11 @@ export default function Slide1() {
                         FINAL PRESENTATION
                     </div>
 
-                    <h1 className="text-6xl font-bold leading-tight mb-4 tracking-tight">
+                    <h1 className="text-7xl font-bold leading-tight mb-6 tracking-tight">
                         <span className="text-white">5G, 6G, and </span>
                         <span className="text-gradient">Beyond:</span>
                         <br />
-                        <span className="text-4xl text-dark-100">The Future of Wireless Networking</span>
+                        <span className="text-5xl text-dark-100 mt-4 block">The Future of Wireless Networking</span>
                     </h1>
                 </motion.div>
 
@@ -27,9 +27,9 @@ export default function Slide1() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                 >
-                    <h2 className="text-2xl text-theme-purple font-semibold mb-12 flex items-center gap-3">
+                    <h2 className="text-3xl text-theme-purple font-semibold mb-14 flex items-center gap-4">
                         Group 11 Presentation
-                        <div className="h-[1px] w-24 bg-gradient-to-r from-theme-purple to-transparent"></div>
+                        <div className="h-[2px] w-32 bg-gradient-to-r from-theme-purple to-transparent"></div>
                     </h2>
                 </motion.div>
 
@@ -37,23 +37,23 @@ export default function Slide1() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 0.8 }}
-                    className="grid grid-cols-2 gap-6 mt-12 max-w-lg"
+                    className="grid grid-cols-2 gap-8 mt-14 max-w-xl"
                 >
                     <div className="flex flex-col">
-                        <span className="text-theme-cyan/80 font-semibold text-xs uppercase tracking-widest mb-1">Course</span>
-                        <span className="font-medium text-dark-200">CPT511</span>
+                        <span className="text-theme-cyan/80 font-bold text-sm uppercase tracking-widest mb-2">Course</span>
+                        <span className="font-semibold text-xl text-dark-200">CPT511</span>
                     </div>
                     <div className="flex flex-col">
-                        <span className="text-theme-cyan/80 font-semibold text-xs uppercase tracking-widest mb-1">Lecturer</span>
-                        <span className="font-medium text-dark-200">Dr. Adekpoju</span>
+                        <span className="text-theme-cyan/80 font-bold text-sm uppercase tracking-widest mb-2">Lecturer</span>
+                        <span className="font-semibold text-xl text-dark-200">Dr. Adekpoju</span>
                     </div>
                     <div className="flex flex-col">
-                        <span className="text-theme-cyan/80 font-semibold text-xs uppercase tracking-widest mb-1">Institution</span>
-                        <span className="font-medium text-dark-200">Federal University of Technology Minna</span>
+                        <span className="text-theme-cyan/80 font-bold text-sm uppercase tracking-widest mb-2">Institution</span>
+                        <span className="font-semibold text-lg text-dark-200">Federal University of Technology Minna</span>
                     </div>
                     <div className="flex flex-col">
-                        <span className="text-theme-cyan/80 font-semibold text-xs uppercase tracking-widest mb-1">Date</span>
-                        <span className="font-medium text-dark-200">March 4, 2026</span>
+                        <span className="text-theme-cyan/80 font-bold text-sm uppercase tracking-widest mb-2">Date</span>
+                        <span className="font-semibold text-xl text-dark-200">March 4, 2026</span>
                     </div>
                 </motion.div>
             </div>

@@ -35,7 +35,7 @@ export default function Slide16() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="text-dark-400 uppercase tracking-[0.3em] text-sm font-bold mb-2 block">
+            <span className="text-dark-400 uppercase tracking-[0.3em] text-base font-bold mb-3 block">
               Summary
             </span>
             <h2 className="text-6xl font-black text-white tracking-tight leading-tight">
@@ -44,14 +44,14 @@ export default function Slide16() {
           </motion.div>
         </div>
 
-        <div className="flex flex-col gap-4 z-10 w-full max-w-xl">
+        <div className="flex flex-col gap-5 z-10 w-full max-w-xl">
           {points.map((point, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.1 * i, ease: "easeOut" }}
-              className={`glass-panel p-5 rounded-3xl border border-dark-700 hover:border-dark-600 transition-all duration-300 group hover:translate-x-3 hover:shadow-lg bg-dark-800/60 overflow-hidden relative`}
+              className={`glass-panel p-6 rounded-3xl border border-dark-700 hover:border-dark-600 transition-all duration-300 group hover:translate-x-3 hover:shadow-lg bg-dark-800/60 overflow-hidden relative`}
             >
               <div className="flex items-start gap-5 relative z-10">
                 <div
@@ -59,7 +59,7 @@ export default function Slide16() {
                 >
                   <point.icon className={`w-7 h-7 ${point.color}`} />
                 </div>
-                <p className="text-dark-200 text-[16px] font-medium leading-relaxed pt-1 flex-1">
+                <p className="text-dark-200 text-lg font-medium leading-relaxed pt-1 flex-1">
                   {point.text}
                 </p>
               </div>

@@ -39,7 +39,7 @@ export default function Slide5() {
             {/* Left Column: Text & Features */}
             <div className="flex-[1.2] pr-12 z-10 flex flex-col justify-center h-full">
 
-                <div className="mb-10 z-10">
+                <div className="mb-6 z-10">
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -50,8 +50,8 @@ export default function Slide5() {
                             <Smartphone className="w-8 h-8 text-theme-blue" />
                         </div>
                         <div>
-                            <span className="text-theme-blue uppercase tracking-[0.2em] text-sm font-bold block mb-1">5th Generation</span>
-                            <h2 className="text-5xl font-black text-white tracking-tight">
+                            <span className="text-theme-blue uppercase tracking-[0.2em] text-base font-bold block mb-1">5th Generation</span>
+                            <h2 className="text-6xl font-black text-white tracking-tight leading-tight">
                                 What is <span className="text-gradient">5G?</span>
                             </h2>
                         </div>
@@ -61,28 +61,28 @@ export default function Slide5() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-dark-200 text-lg max-w-xl font-medium leading-relaxed mt-6 pl-3 border-l-4 border-theme-blue"
+                        className="text-dark-200 text-xl max-w-xl font-medium leading-relaxed mt-6 pl-4 border-l-4 border-theme-blue"
                     >
                         5G is the fifth generation mobile network. It is a new global wireless standard designed to connect virtually everyone and everything together including machines, objects, and devices.
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 z-10 w-full max-w-3xl">
+                <div className="grid grid-cols-2 gap-3 z-10 w-full max-w-3xl">
                     {features.map((feature, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: feature.delay, ease: "easeOut" }}
-                            className="glass-panel p-5 rounded-2xl border border-dark-700 hover:border-theme-blue/30 transition-all duration-300 group hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] bg-dark-800/50"
+                            className="glass-panel p-6 rounded-2xl border border-dark-700 hover:border-theme-blue/30 transition-all duration-300 group hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] bg-dark-800/50"
                         >
                             <div className="flex items-start gap-4">
-                                <div className={`p-3 rounded-xl bg-dark-800 border border-dark-700 group-hover:border-theme-blue/20 transition-colors shadow-sm`}>
-                                    <feature.icon className={`w-5 h-5 ${feature.color}`} />
+                                <div className={`p-4 rounded-xl bg-dark-800 border border-dark-700 group-hover:border-theme-blue/20 transition-colors shadow-sm`}>
+                                    <feature.icon className={`w-6 h-6 ${feature.color}`} />
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="text-[15px] font-bold text-white mb-1 leading-tight">{feature.title}</h3>
-                                    <p className="text-dark-300 text-xs font-medium leading-relaxed">{feature.desc}</p>
+                                    <h3 className="text-[17px] font-bold text-white mb-2 leading-tight">{feature.title}</h3>
+                                    <p className="text-dark-300 text-sm font-medium leading-relaxed">{feature.desc}</p>
                                 </div>
                             </div>
                         </motion.div>

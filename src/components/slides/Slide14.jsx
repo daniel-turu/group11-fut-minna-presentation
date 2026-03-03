@@ -33,13 +33,13 @@ export default function Slide14() {
     <div className="w-full h-full flex items-center justify-between px-16 relative">
       {/* Left Column: Text & Features (Larger Layout) */}
       <div className="flex-[1] pr-12 z-10 flex flex-col justify-center h-full">
-        <div className="mb-10 z-10">
+        <div className="mb-6 z-10">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="text-red-500 uppercase tracking-[0.3em] text-sm font-bold mb-2 block">
+            <span className="text-red-500 uppercase tracking-[0.3em] text-base font-bold mb-3 block">
               Critical Considerations
             </span>
             <h2 className="text-6xl font-black text-white tracking-tight leading-tight">
@@ -51,7 +51,7 @@ export default function Slide14() {
           </motion.div>
         </div>
 
-        <div className="flex flex-col gap-4 z-10 w-full max-w-xl">
+        <div className="flex flex-col gap-3 z-10 w-full max-w-xl">
           {points.map((point, index) => (
             <motion.div
               key={index}
@@ -64,17 +64,17 @@ export default function Slide14() {
               }}
               className={`glass-panel p-4 rounded-2xl border border-dark-700 hover:border-red-500/30 transition-all duration-300 group hover:translate-x-2 hover:shadow-[0_8px_30px_rgba(239,68,68,0.08)] bg-dark-800/60 overflow-hidden relative`}
             >
-              <div className="flex items-center gap-5 relative z-10">
+              <div className="flex items-center gap-3 relative z-10">
                 <div
                   className={`p-3 rounded-xl bg-dark-900 border border-dark-700 group-hover:border-red-500/20 transition-colors shadow-sm shrink-0`}
                 >
                   <point.icon className={`w-6 h-6 ${point.color}`} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[18px] font-bold text-white mb-1 leading-tight">
+                  <h3 className="text-xl font-bold text-white mb-2 leading-tight">
                     {point.title}
                   </h3>
-                  <p className="text-dark-200 text-[14px] font-medium leading-relaxed">
+                  <p className="text-dark-200 text-base font-medium leading-relaxed">
                     {point.desc}
                   </p>
                 </div>

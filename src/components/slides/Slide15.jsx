@@ -51,7 +51,7 @@ export default function Slide15() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="text-emerald-600 uppercase tracking-[0.3em] text-sm font-bold mb-2 block">
+            <span className="text-emerald-600 uppercase tracking-[0.3em] text-base font-bold mb-3 block">
               The Big Picture
             </span>
             <h2 className="text-6xl font-black text-white tracking-tight leading-tight">
@@ -63,7 +63,7 @@ export default function Slide15() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 z-10 w-full max-w-3xl">
+        <div className="grid grid-cols-2 gap-5 z-10 w-full max-w-3xl">
           {impacts.map((impact, index) => (
             <motion.div
               key={index}
@@ -74,19 +74,19 @@ export default function Slide15() {
                 delay: 0.1 * index,
                 ease: "easeOut",
               }}
-              className={`glass-panel p-4 rounded-2xl border border-dark-700 hover:border-emerald-500/30 transition-all duration-300 group hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(16,185,129,0.08)] bg-dark-800/60 overflow-hidden relative ${index === 4 ? "col-span-2" : ""}`}
+              className={`glass-panel p-5 rounded-2xl border border-dark-700 hover:border-emerald-500/30 transition-all duration-300 group hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(16,185,129,0.08)] bg-dark-800/60 overflow-hidden relative ${index === 4 ? "col-span-2" : ""}`}
             >
-              <div className="flex items-center gap-4 relative z-10">
+              <div className="flex items-center gap-5 relative z-10">
                 <div
-                  className={`p-3 rounded-xl bg-dark-900 border border-dark-700 group-hover:border-emerald-500/20 transition-colors shadow-sm shrink-0`}
+                  className={`p-4 rounded-xl bg-dark-900 border border-dark-700 group-hover:border-emerald-500/20 transition-colors shadow-sm shrink-0`}
                 >
                   <impact.icon className={`w-6 h-6 ${impact.color}`} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[16px] font-bold text-white mb-1 leading-tight">
+                  <h3 className="text-lg font-bold text-white mb-2 leading-tight">
                     {impact.title}
                   </h3>
-                  <p className="text-dark-200 text-[13px] font-medium leading-relaxed">
+                  <p className="text-dark-200 text-base font-medium leading-relaxed">
                     {impact.desc}
                   </p>
                 </div>

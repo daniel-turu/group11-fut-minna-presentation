@@ -35,13 +35,13 @@ export default function Slide2() {
                 transition={{ duration: 0.6 }}
                 className="text-center mb-16 z-10"
             >
-                <span className="text-theme-cyan uppercase tracking-[0.3em] text-xs font-bold mb-2 block">The Team</span>
-                <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-dark-300">
+                <span className="text-theme-cyan uppercase tracking-[0.3em] text-sm font-bold mb-3 block">The Team</span>
+                <h2 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-dark-300">
                     Group <span className="text-gradient">11</span> Members
                 </h2>
             </motion.div>
 
-            <div className="flex flex-wrap justify-center gap-8 w-full max-w-5xl z-10">
+            <div className="flex flex-wrap justify-center gap-4 w-full max-w-5xl z-10">
                 {members.map((member) => (
                     <motion.div
                         key={member.id}
@@ -49,17 +49,17 @@ export default function Slide2() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: member.delay, ease: "easeOut" }}
                         whileHover={{ y: -5, scale: 1.02 }}
-                        className="glass-panel rounded-2xl p-6 w-64 flex flex-col items-center text-center group cursor-default transition-all duration-300 hover:border-white/10 hover:shadow-[0_8px_30px_rgba(37,99,235,0.1)] relative overflow-hidden"
+                        className="glass-panel rounded-2xl p-6 w-80 flex flex-col items-center text-center group cursor-default transition-all duration-300 hover:border-white/10 hover:shadow-[0_8px_30px_rgba(37,99,235,0.1)] relative overflow-hidden"
                     >
                         {/* Top gradient highlight effect */}
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-dark-700 to-transparent group-hover:via-theme-blue/30 transition-all duration-500"></div>
 
-                        <div className="w-16 h-16 rounded-full bg-dark-800 border border-dark-700 flex items-center justify-center mb-4 group-hover:border-theme-blue/30 transition-all duration-300 shadow-sm">
-                            <member.icon className={`w-8 h-8 ${member.color} opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 drop-shadow-sm`} />
+                        <div className="w-20 h-20 rounded-full bg-dark-800 border border-dark-700 flex items-center justify-center mb-5 group-hover:border-theme-blue/30 transition-all duration-300 shadow-sm">
+                            <member.icon className={`w-10 h-10 ${member.color} opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 drop-shadow-sm`} />
                         </div>
 
-                        <h3 className="text-xl font-bold text-white mb-1 tracking-wide">{member.name}</h3>
-                        <p className="text-dark-400 text-sm font-medium">{member.role}</p>
+                        <h3 className="text-2xl font-bold text-white mb-2 tracking-wide leading-tight px-2">{member.name}</h3>
+                        <p className="text-dark-300 text-base font-semibold">{member.role}</p>
 
                         {/* Tech decorative line */}
                         <div className="mt-4 w-12 h-[2px] bg-dark-700 group-hover:bg-theme-cyan/50 transition-colors duration-300"></div>

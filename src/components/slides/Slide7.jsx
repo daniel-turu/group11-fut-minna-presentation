@@ -46,8 +46,8 @@ export default function Slide7() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="mb-8"
                 >
-                    <span className="text-theme-purple uppercase tracking-[0.2em] text-xs font-bold mb-2 block">Core Innovations</span>
-                    <h2 className="text-5xl font-black text-white leading-tight">
+                    <span className="text-theme-purple uppercase tracking-[0.2em] text-base font-bold mb-3 block">Core Innovations</span>
+                    <h2 className="text-6xl font-black text-white leading-tight">
                         5G Key <br />
                         <span className="text-gradient">Technologies</span>
                     </h2>
@@ -74,28 +74,28 @@ export default function Slide7() {
 
             {/* Right Column: Technology Nodes */}
             <div className="flex-1 border-l border-dark-700 pl-8 py-8 relative z-10">
-                <div className="space-y-6">
+                <div className="space-y-8">
                     {technologies.map((tech, i) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, x: 50 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 + (i * 0.1), ease: "easeOut" }}
-                            className="flex items-start gap-4 group"
+                            className="flex items-start gap-5 group"
                         >
-                            <div className="p-3 rounded-full bg-dark-800 border border-dark-700 shadow-sm group-hover:scale-110 group-hover:border-theme-blue/30 transition-all duration-300 relative z-10 shrink-0">
-                                <tech.icon className={`w-5 h-5 ${tech.color}`} />
+                            <div className="p-4 rounded-full bg-dark-800 border border-dark-700 shadow-sm group-hover:scale-110 group-hover:border-theme-blue/30 transition-all duration-300 relative z-10 shrink-0">
+                                <tech.icon className={`w-6 h-6 ${tech.color}`} />
                             </div>
                             <div className="pt-1">
-                                <h3 className="text-lg font-bold text-white group-hover:text-theme-blue transition-colors mb-1">{tech.title}</h3>
-                                <p className="text-sm font-medium text-dark-300 leading-relaxed">{tech.desc}</p>
+                                <h3 className="text-xl font-bold text-white group-hover:text-theme-blue transition-colors mb-2">{tech.title}</h3>
+                                <p className="text-base font-medium text-dark-300 leading-relaxed">{tech.desc}</p>
                             </div>
                         </motion.div>
                     ))}
                 </div>
 
                 {/* Vertical connection line for nodes */}
-                <div className="absolute left-[2.45rem] top-12 bottom-12 w-[1px] bg-dark-700 z-0"></div>
+                <div className="absolute left-[2.9rem] top-12 bottom-12 w-[1px] bg-dark-700 z-0"></div>
             </div>
 
         </div>

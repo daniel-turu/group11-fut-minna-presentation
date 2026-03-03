@@ -44,22 +44,22 @@ export default function Slide12() {
     <div className="w-full h-full flex items-center justify-between px-16 relative">
       {/* Left Column: Text & Features */}
       <div className="flex-[1.2] pr-12 z-10 flex flex-col justify-center h-full">
-        <div className="mb-8 z-10">
+        <div className="mb-10 z-10">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="text-theme-cyan uppercase tracking-[0.3em] text-xs font-bold mb-2 block">
+            <span className="text-theme-cyan uppercase tracking-[0.3em] text-base font-bold mb-3 block">
               Sci-Fi Becomes Reality
             </span>
-            <h2 className="text-5xl font-black text-white tracking-tight">
+            <h2 className="text-6xl font-black text-white tracking-tight leading-tight">
               6G <span className="text-gradient">Applications</span>
             </h2>
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 z-10 w-full max-w-3xl">
+        <div className="grid grid-cols-2 gap-5 z-10 w-full max-w-3xl">
           {applications.map((app, index) => (
             <motion.div
               key={index}
@@ -79,15 +79,15 @@ export default function Slide12() {
 
               <div className="flex items-center gap-4 relative z-10">
                 <div
-                  className={`p-2.5 rounded-xl bg-dark-900 border border-dark-700 group-hover:border-theme-cyan/20 transition-colors shadow-sm shrink-0`}
+                  className={`p-3.5 rounded-xl bg-dark-900 border border-dark-700 group-hover:border-theme-cyan/20 transition-colors shadow-sm shrink-0`}
                 >
-                  <app.icon className={`w-5 h-5 ${app.iconColor}`} />
+                  <app.icon className={`w-6 h-6 ${app.iconColor}`} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[14px] font-bold text-white mb-0.5 leading-tight">
+                  <h3 className="text-base font-bold text-white mb-1 leading-tight">
                     {app.title}
                   </h3>
-                  <p className="text-dark-300 text-[11px] font-medium leading-relaxed">
+                  <p className="text-dark-300 text-sm font-medium leading-relaxed">
                     {app.desc}
                   </p>
                 </div>

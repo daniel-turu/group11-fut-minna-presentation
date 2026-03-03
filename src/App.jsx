@@ -67,9 +67,9 @@ function App() {
 
     const handleResize = () => {
       // The presentation is designed for ~1280x800.
-      // We calculate how much we need to scale it down to fit the current screen.
-      const scaleX = window.innerWidth / 1280;
-      const scaleY = window.innerHeight / 800;
+      // We calculate how much we need to scale it down to fit the current screen with a 32px safe padding around the edges.
+      const scaleX = (window.innerWidth - 64) / 1280;
+      const scaleY = (window.innerHeight - 64) / 800;
       // We use Math.min to ensure the entire presentation fits on screen without cropping
       // We cap the scale at 1 so it doesn't get massively huge on ultrawide monitors
       setScale(Math.min(scaleX, scaleY, 1));
@@ -107,8 +107,8 @@ function App() {
         className="flex items-center justify-center transition-transform duration-300 origin-center"
         style={{ transform: `scale(${scale})` }}
       >
-        <main className="w-[1280px] h-[800px] z-10 glass-panel relative rounded-2xl flex flex-col p-8 m-8 overflow-hidden shrink-0">
-          <div className="flex-grow w-full h-full relative">
+        <main className="w-[1280px] h-[800px] z-10 glass-panel relative rounded-2xl flex flex-col p-8 overflow-hidden shrink-0">
+          <div className="flex-1 w-full min-h-0 relative">
             <CurrentSlideComponent />
           </div>
 
