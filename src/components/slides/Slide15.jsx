@@ -86,7 +86,7 @@ export default function Slide15() {
                   <h3 className="text-lg font-bold text-white mb-2 leading-tight">
                     {impact.title}
                   </h3>
-                  <p className="text-dark-200 text-base font-medium leading-relaxed">
+                  <p className="text-dark-200 text-base font-bold leading-relaxed">
                     {impact.desc}
                   </p>
                 </div>

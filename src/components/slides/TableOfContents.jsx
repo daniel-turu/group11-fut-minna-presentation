@@ -48,7 +48,7 @@ export default function TableOfContents() {
                                 {item.title}
                             </span>
                         </div>
-                        <div className="text-dark-300 font-medium font-mono text-sm group-hover:text-theme-blue transition-colors">
+                        <div className="text-dark-300 font-bold font-mono text-sm group-hover:text-theme-blue transition-colors">
                             Slide {item.slide}
                         </div>
                     </motion.div>

@@ -61,7 +61,7 @@ export default function Slide5() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-dark-200 text-xl max-w-xl font-medium leading-relaxed mt-6 pl-4 border-l-4 border-theme-blue"
+                        className="text-dark-200 text-xl max-w-xl font-bold leading-relaxed mt-6 pl-4 border-l-4 border-theme-blue"
                     >
                         5G is the fifth generation mobile network. It is a new global wireless standard designed to connect virtually everyone and everything together including machines, objects, and devices.
                     </motion.p>
@@ -82,7 +82,7 @@ export default function Slide5() {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-[17px] font-bold text-white mb-2 leading-tight">{feature.title}</h3>
-                                    <p className="text-dark-300 text-sm font-medium leading-relaxed">{feature.desc}</p>
+                                    <p className="text-dark-300 text-sm font-bold leading-relaxed">{feature.desc}</p>
                                 </div>
                             </div>
                         </motion.div>

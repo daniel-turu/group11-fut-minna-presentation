@@ -88,7 +88,7 @@ export default function Slide7() {
                             </div>
                             <div className="pt-1">
                                 <h3 className="text-xl font-bold text-white group-hover:text-theme-blue transition-colors mb-2">{tech.title}</h3>
-                                <p className="text-base font-medium text-dark-300 leading-relaxed">{tech.desc}</p>
+                                <p className="text-base font-bold text-dark-300 leading-relaxed">{tech.desc}</p>
                             </div>
                         </motion.div>
                     ))}
