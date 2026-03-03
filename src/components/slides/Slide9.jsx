@@ -96,7 +96,7 @@ export default function Slide9() {
                   <h3 className="text-[17px] font-bold text-white mb-2 leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-dark-300 text-sm font-medium leading-relaxed">
+                  <p className="text-dark-300 text-sm font-bold leading-relaxed">
                     {item.desc}
                   </p>
                 </div>

@@ -71,7 +71,7 @@ export default function Slide13() {
                   <h3 className="text-xl font-bold text-white mb-2 leading-tight">
                     {tech.title}
                   </h3>
-                  <p className="text-dark-200 text-base font-medium leading-relaxed">
+                  <p className="text-dark-200 text-base font-bold leading-relaxed">
                     {tech.desc}
                   </p>
                 </div>

@@ -59,7 +59,7 @@ export default function Slide16() {
                 >
                   <point.icon className={`w-7 h-7 ${point.color}`} />
                 </div>
-                <p className="text-dark-200 text-lg font-medium leading-relaxed pt-1 flex-1">
+                <p className="text-dark-200 text-lg font-bold leading-relaxed pt-1 flex-1">
                   {point.text}
                 </p>
               </div>

@@ -67,7 +67,7 @@ export default function Slide6() {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-xl font-bold text-white mb-2 leading-tight">{item.title}</h3>
-                                    <p className="text-dark-300 text-sm font-medium leading-relaxed">{item.desc}</p>
+                                    <p className="text-dark-300 text-sm font-bold leading-relaxed">{item.desc}</p>
                                 </div>
                             </div>
                         </motion.div>
