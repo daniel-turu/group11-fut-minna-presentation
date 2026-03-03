@@ -77,7 +77,7 @@ export default function Slide11() {
                   <h3 className="text-[17px] font-bold text-white mb-2 leading-tight">
                     {tech.title}
                   </h3>
-                  <p className="text-dark-300 text-sm font-medium leading-relaxed">
+                  <p className="text-dark-300 text-sm font-bold leading-relaxed">
                     {tech.desc}
                   </p>
                 </div>

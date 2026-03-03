@@ -106,7 +106,7 @@ export default function Slide4() {
                             <div className={`text-5xl font-black mb-3 flex items-center justify-center gap-2 ${item.active ? 'text-theme-cyan drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]' : 'text-white'}`}>
                                 {item.gen}
                             </div>
-                            <p className="text-sm text-dark-300 font-medium leading-relaxed mb-4 min-h-[44px] px-1">
+                            <p className="text-sm text-dark-300 font-bold leading-relaxed mb-4 min-h-[44px] px-1">
                                 {item.features}
                             </p>
 

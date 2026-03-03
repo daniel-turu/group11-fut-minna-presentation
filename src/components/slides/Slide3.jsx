@@ -48,7 +48,7 @@ export default function Slide3() {
                         Introduction to <br />
                         <span className="text-gradient">Wireless Networking</span>
                     </h2>
-                    <p className="text-dark-200 text-xl max-w-xl leading-relaxed font-medium">
+                    <p className="text-dark-200 text-xl max-w-xl leading-relaxed font-bold">
                         Wireless networking allows devices to transmit data through the air using radio waves,
                         forming the basis for modern connectivity, from smartphones to satellites.
                     </p>
@@ -75,16 +75,16 @@ export default function Slide3() {
                     transition={{ duration: 1, delay: 0.8 }}
                     className="flex flex-wrap gap-3"
                 >
-                    <div className="px-4 py-2 rounded-full glass-panel flex items-center gap-2 text-sm text-dark-100 font-medium border-dark-700 bg-dark-800/80">
+                    <div className="px-4 py-2 rounded-full glass-panel flex items-center gap-2 text-sm text-dark-100 font-bold border-dark-700 bg-dark-800/80">
                         <Smartphone className="w-4 h-4 text-theme-blue" /> Cellular
                     </div>
-                    <div className="px-4 py-2 rounded-full glass-panel flex items-center gap-2 text-sm text-dark-100 font-medium border-dark-700 bg-dark-800/80">
+                    <div className="px-4 py-2 rounded-full glass-panel flex items-center gap-2 text-sm text-dark-100 font-bold border-dark-700 bg-dark-800/80">
                         <Wifi className="w-4 h-4 text-theme-cyan" /> Wi-Fi
                     </div>
-                    <div className="px-4 py-2 rounded-full glass-panel flex items-center gap-2 text-sm text-dark-100 font-medium border-dark-700 bg-dark-800/80">
+                    <div className="px-4 py-2 rounded-full glass-panel flex items-center gap-2 text-sm text-dark-100 font-bold border-dark-700 bg-dark-800/80">
                         <Radio className="w-4 h-4 text-theme-purple" /> Bluetooth
                     </div>
-                    <div className="px-4 py-2 rounded-full glass-panel flex items-center gap-2 text-sm text-dark-100 font-medium border-dark-700 bg-dark-800/80">
+                    <div className="px-4 py-2 rounded-full glass-panel flex items-center gap-2 text-sm text-dark-100 font-bold border-dark-700 bg-dark-800/80">
                         <Satellite className="w-4 h-4 text-theme-blue" /> Satellite
                     </div>
                 </motion.div>
@@ -104,7 +104,7 @@ export default function Slide3() {
                         </div>
                         <div>
                             <h3 className="text-xl font-bold text-white mb-2">{point.title}</h3>
-                            <p className="text-dark-300 text-base leading-relaxed font-medium">{point.desc}</p>
+                            <p className="text-dark-300 text-base leading-relaxed font-bold">{point.desc}</p>
                         </div>
                     </motion.div>
                 ))}

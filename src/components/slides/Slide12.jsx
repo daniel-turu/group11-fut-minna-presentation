@@ -87,7 +87,7 @@ export default function Slide12() {
                   <h3 className="text-base font-bold text-white mb-1 leading-tight">
                     {app.title}
                   </h3>
-                  <p className="text-dark-300 text-sm font-medium leading-relaxed">
+                  <p className="text-dark-300 text-sm font-bold leading-relaxed">
                     {app.desc}
                   </p>
                 </div>

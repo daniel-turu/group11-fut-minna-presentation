@@ -28,7 +28,7 @@ export default function Slide10() {
                 <h2 className="text-7xl font-black text-white tracking-tight leading-none mb-6">
                     Introduction to <span className="text-transparent bg-clip-text bg-gradient-to-r from-theme-purple via-theme-blue to-theme-cyan animate-pulse">6G</span>
                 </h2>
-                <p className="text-dark-300 text-2xl font-medium max-w-3xl mx-auto">
+                <p className="text-dark-300 text-2xl font-bold max-w-3xl mx-auto">
                     The sixth generation of wireless communication will blur the line between the physical and digital worlds.
                 </p>
             </motion.div>
@@ -46,7 +46,7 @@ export default function Slide10() {
                         <div key={i} className="glass-panel p-4 rounded-2xl border border-dark-700 border-l-4 border-l-theme-purple flex items-center justify-between group hover:-translate-y-1 transition-transform">
                             <div>
                                 <span className="block text-dark-400 text-base font-bold tracking-wider uppercase mb-1">{spec.label}</span>
-                                <span className="block text-dark-200 text-sm font-medium">{spec.desc}</span>
+                                <span className="block text-dark-200 text-sm font-bold">{spec.desc}</span>
                             </div>
                             <div className="text-4xl font-black text-theme-purple tracking-tighter">
                                 {spec.value}
@@ -72,7 +72,7 @@ export default function Slide10() {
                             <h3 className="text-4xl font-bold text-white leading-tight">AI-Driven <br />Intelligence</h3>
                         </div>
 
-                        <p className="text-dark-200 text-xl leading-relaxed font-medium mb-8">
+                        <p className="text-dark-200 text-xl leading-relaxed font-bold mb-8">
                             Unlike 5G which simply connects devices, 6G will integrate Artificial Intelligence natively into the network architecture. It will manage operations intuitively, predict network congestion, and optimize routing in real-time without human intervention.
                         </p>
 
